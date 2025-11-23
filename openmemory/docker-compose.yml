@@ -11,8 +11,6 @@ services:
     environment:
       - USER
       - API_KEY
-    env_file:
-      - .env
     depends_on:
       - mem0_store
     ports:
