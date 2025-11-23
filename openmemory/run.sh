@@ -35,7 +35,7 @@ fi
 
 # Find an available port starting from 3000
 echo "🔍 Looking for available port for frontend..."
-for port in {3000..3010}; do
+for port in {3003..3010}; do
   if ! lsof -i:$port >/dev/null 2>&1; then
     FRONTEND_PORT=$port
     break
