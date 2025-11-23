@@ -12,7 +12,7 @@ services:
       - USER
       - API_KEY
     env_file:
-      - api/.env
+      - .env
     depends_on:
       - mem0_store
     ports:
@@ -27,7 +27,7 @@ services:
       dockerfile: Dockerfile
     image: mem0/openmemory-ui:latest
     ports:
-      - "3000:3000"
+      - "3003:3003"
     environment:
       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
       - NEXT_PUBLIC_USER_ID=${USER}
